@@ -1,26 +1,15 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Home from './Components/Home/Home';
-import ContactUs from './Components/ContactUs/ContactUs';
+import { Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import ContactUs from "./Components/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-          <ContactUs></ContactUs>
-        </Route>
-        <Route exact path="/">
-        </Route>
-      </Switch>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="contact" element={<ContactUs></ContactUs>}></Route>
+      </Routes>
     </div>
   );
 }
