@@ -1,0 +1,28 @@
+.btn-navbar{
+    display: flex;
+    padding: 0.2rem 3rem;
+    font-size: 1.6rem !important;
+    border: 1px solid #130f40;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+   transition: .3s;
+}
+.btn-navbar i{
+    padding-right: 0.5rem;
+}
+.btn-navbar:hover{
+    color: white;
+    background-color: #130f40;
+}
+.text-color{
+    color: #130f40;
+}
+.navbar-nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #130f40;
+    font-weight: bold;
+    margin-right: 20px;
+}
